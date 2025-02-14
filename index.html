@@ -5,60 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TRAVEL PLANNER</title>
     <style>
-        body {
-            background-color: rgb(248, 211, 164);
-            background-image: url(background.jpg);
-            background-repeat: repeat;
-            background-position: center;
+        *{
+            margin: 0;
+            padding: 0%;
         }
-        .navbar {
+        body {
+
+            background-image: url(ocean\,jog.jpg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.1)) ;
+            background-repeat: no-repeat;
+            background-position: cover;
+            
+            
+        }
+
+        nav {
+            width: 100%;
+            height: 15vh;
             display: flex;
             justify-content: space-between;
+            align-items: center;
+        }
+
+       nav .logo{
+            width: 25%;
+         text-align: center;
             color: white;
-            background-color: rgb(248, 152, 152);
-            align-items: center;
+            position: relative;
+            right: 200px;
+
         }
-        ul {
-            display: flex;
-            margin-right: 40px;
-            margin-top: 20px;
-            font-family: 'Mukta', sans-serif;
-            list-style: none;
-            font-size: 22px;
-           
-        }
-        ul li a {
-            margin-inline: 30px;
-            text-decoration: none;
-            color: rgb(20, 15, 15);
-            align-items: center;
-            font-weight: 700;
-           
-        }
-        .logo img {
-            width: 80px;
-            height: 80px;
-        }
-        h4.heading {
-            margin-right: 600px;
-            justify-content: space-evenly;
-            color: rgb(54, 4, 41);
-            font-weight: 900;
-            font-size: larger;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        .main img {
-            width: 100vw;
-            height: 100vh;
-        }
-        ul li a:hover {
-            border-bottom: 4px solid rgb(54, 4, 41);
-        }
-       .container h1{
-            margin-top: 200px;
-           margin-left: 700px;
-        }
-        footer {
+        
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+
+    
+}
+
+nav .menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav img{
+    display: flex;
+    width: 10%;
+    justify-items: center;
+    position: relative;
+    width: 70px;
+    height: 50px;
+    left: 120px;
+    bottom: 15px;
+
+}
+
+footer {
             background-color: #333;
             color: white;
             text-align: center;
@@ -66,38 +71,23 @@
             position: absolute;
             bottom: 0;
             width: 100%;
+}
 
-        }
     </style>
 </head>
 <body>
-   
-    <div class="navbar">
-        <div class="logo">
-            <img src="https://pluspng.com/img-png/png-travel-travel-night-667.png">
-        </div>
-                     
-
-        <h4 class="heading">
-            ADVENTOUR
-            </h4>
-     
-        <ul>
-            <li><a href="../Home/Home.html">HOME</a></li>
-            <li><a href="../About/about.html">ABOUT</a></li>
-            <li><a href="../Blogs/Blogs.html">BLOGS</a></li>
-            <li><a href="../contacts/contacts.html">CONTACTS</a></li>
-        </ul>
+    <nav> 
+        <img src="travel.png">
+    <div class="logo"><h1 class="">ADVENTOUR</h1></div>
+        <div class="menu">
+            <a href="../Home/Home.html">HOME</a>
+            <a href="../About/about.html">ABOUT</a>
+            <a href="../Blogs/Blogs.html">BLOGS</a>
+            <a href="../contacts/contacts.html">CONTACTS</a>
+         </div>
     </div>
-    
-            <p>
-                <div class="container">
-                    <h1>HELLO!</h1>
-                    
-                </div>
-            </p>
-        </div>
-    </div>
+    </nav>
+            
     
     <footer>
         <p>&copy; 2025 My Website. All rights reserved.</p>
