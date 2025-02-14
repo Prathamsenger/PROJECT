@@ -3,75 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
+    <title>TRAVEL PLANNER</title>
     <style>
-        body {
-            background-color: rgb(248, 211, 164);
+        *{
+            margin: 0;
+            padding: 0%;
         }
-        .navbar {
+        body {
+
+            background-image: url(ocean\,jog.jpg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.1)) ;
+            background-repeat: no-repeat;
+            background-position: cover;
+            
+            
+        }
+
+        nav {
+            width: 100%;
+            height: 15vh;
             display: flex;
             justify-content: space-between;
-            color: white;
-            background-color: rgb(248, 152, 152);
-        }
-        ul {
-            display: flex;
-            margin-right: 40px;
-            margin-top: 20px;
-            font-family: 'Mukta', sans-serif;
-            list-style: none;
-            font-size: 22px;
-        }
-        ul li a {
-            margin-inline: 30px;
-            text-decoration: none;
-            color: rgb(20, 15, 15);
             align-items: center;
-            font-weight: 700;
         }
-        .logo img {
-            width: 80px;
-            height: 80px;
+
+       nav .logo{
+            width: 25%;
+         text-align: center;
+            color: white;
+            position: relative;
+            right: 200px;
+
         }
-        h4.heading {
-            margin-right: 600px;
-            justify-content: space-evenly;
-            color: rgb(54, 4, 41);
-            font-weight: 900;
-            font-size: larger;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        .main img {
-            width: 100vw;
-            height: 100vh;
-        }
-        ul li a:hover {
-            border-bottom: 4px solid rgb(54, 4, 41);
-        }
+        
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+
+    
+}
+
+nav .menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav img{
+    display: flex;
+    width: 10%;
+    justify-items: center;
+    position: relative;
+    width: 70px;
+    height: 50px;
+    left: 120px;
+    bottom: 15px;
+
+}
+
+footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+}
+
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <img src="https://pluspng.com/img-png/png-travel-travel-night-667.png">
-        </div>
-        <h4 class="heading">
-            ADVENTOUR
-        </h4>
-        <ul>
-            <li><a href="../Home/Home.html">HOME</a></li>
-            <li><a href="../About/about.html">ABOUT</a></li>
-            <li><a href="../Blogs/Blogs.html">BLOGS</a></li>
-            <li><a href="../contacts/contacts.html">CONTACTS</a></li>
-        </ul>
+    <nav> 
+        <img src="travel.png">
+    <div class="logo"><h1 class="">ADVENTOUR</h1></div>
+        <div class="menu">
+            <a href="../Home/Home.html">HOME</a>
+            <a href="../About/about.html">ABOUT</a>
+            <a href="../Blogs/Blogs.html">BLOGS</a>
+            <a href="../contacts/contacts.html">CONTACTS</a>
+         </div>
     </div>
-            <p>
-                <div class="container">
-                    <h1>welcome to the travelling club</h1>
-                    <p>Adventour is a travel agency that provides the best travel experience to its customers. We have a team of professionals who are dedicated to providing the best services to our customers. We offer a wide range of travel packages to suit the needs of our customers. Our travel packages are designed to provide the best value for money and to ensure that our customers have a memorable travel experience. We are committed to providing the best customer service and to ensuring that our customers have a hassle-free travel experience. We are passionate about travel and we are dedicated to providing the best travel experience to our customers. We are committed to providing the best travel experience to our customers and to ensuring that our customers have a memorable travel experience. We are passionate about travel and we are dedicated to providing the best travel experience to our customers. We are committed to providing the best travel experience to our customers and to ensuring that our customers have a memorable travel experience.</p>
-                </div>
-            </p>
-        </div>
-    </div>
-</body>
+    </nav>
+            
+    
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+        <p> <a href="contacts/contacts.html">Contact Us</a></p>
+    </footer>
+</body> 
+
 </html>
